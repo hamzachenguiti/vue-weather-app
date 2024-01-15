@@ -74,7 +74,7 @@ const addCityToLocalStorage = () => {
     }
   };
   savedCities.value.push(locationObject);
-  localStorage.setItem('savedCities', JSON.stringify(savedCities));
+  localStorage.setItem('savedCities', JSON.stringify(savedCities.value));
 
   const query = Object.assign({}, route.query);
   delete query.preview;
