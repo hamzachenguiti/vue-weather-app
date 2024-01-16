@@ -97,12 +97,23 @@
         </div>
       </div>
     </div>
+
+    <div
+      class="flex items-center gap-2 py-12 text-white cursor-pointer duration-150 hover:text-red-500"
+      @click="removeCity(route.query.id)"
+    >
+      <i class="fa-solid fa-trash"></i>
+      <p>Remove City</p>
+    </div>
   </div>
 </template>
 
 <script setup>
 import axios from 'axios';
 import { useRoute } from 'vue-router';
+import useRemoveCity from '@/composables/useRemoveCity';
+
+const { removeCity } = useRemoveCity();
 
 const route = useRoute();
 const getWeatherData = async () => {
