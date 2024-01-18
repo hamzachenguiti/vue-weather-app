@@ -1,35 +1,23 @@
-# .
+## Vue Weather App
 
-This template should help get you started developing with Vue 3 in Vite.
+This is a simple Vue.js application that displays the current weather conditions for a given city. The app uses the OpenWeatherMap API to fetch the weather data.
 
-## Recommended IDE Setup
+### Getting Started
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+To get started, clone the repository and install the dependencies:
 
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
+```bash
+git clone https://github.com/hamzachenguiti/vue-weather-app.git
+cd vue-weather-app
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+### Running the App
 
-```sh
+To run the app, use the following command:
+
+```bash
 npm run dev
 ```
 
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+This will start a development server on port 3000. You can then open your browser and navigate to http://localhost:3000 to see the app.
