@@ -2,7 +2,7 @@
   <Teleport to="#modal-container">
     <Transition name="modal-outer">
       <div
-        class="absolute top-0 left-0 flex justify-center items-center bg-black bg-opacity-30 h-screen w-full"
+        class="fixed top-0 left-0 flex justify-center items-center bg-black bg-opacity-30 h-screen w-full"
         v-show="isModalActive"
       >
         <Transition name="modal-inner">
@@ -27,9 +27,8 @@ defineProps({
     type: Boolean,
     default: false
   }
-})
-defineEmits(['close-modal'])
-</script>
+});
+defineEmits(['close-modal']);
 
 <style scoped>
 .modal-outer-enter-active,
