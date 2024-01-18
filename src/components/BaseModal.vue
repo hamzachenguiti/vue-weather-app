@@ -29,7 +29,6 @@ defineProps({
   }
 });
 defineEmits(['close-modal']);
-</script>
 
 <style scoped>
 .modal-outer-enter-active,
